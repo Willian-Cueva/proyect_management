@@ -1,0 +1,32 @@
+.imagen{
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 12px 0px;
+}
+
+.imagenP{
+    width: 100%;
+}
+
+.imageContainer {
+    position: relative; /* Añade posición relativa para alinear la sombra con la imagen */
+    display: inline-block; /* Añade display en línea para que la imagen se ajuste al tamaño de la sombra */
+  }
+  
+  .blinkingShadow {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4); /* Establece la sombra inicial */
+    animation: blink 2s ease-in-out infinite; /* Establece la animación */
+  }
+  
+  @keyframes blink {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); /* Establece el estado inicial de la sombra */
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4); /* Establece la sombra intermedia */
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); /* Establece la sombra final */
+    }
+  }
+  
